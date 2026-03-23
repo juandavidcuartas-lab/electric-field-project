@@ -1,38 +1,29 @@
-\# Electric Field from Experimental Data
+# Electric Field Reconstruction from Experimental Data
 
+This project reconstructs the electric field from experimentally measured electric potential using numerical methods.
 
+## Method
 
-This project computes the electric field from measured electric potential.
+The electric field is computed from the potential using:
 
+E = -∇V
 
+A finite difference approximation is used to estimate the gradient.
 
-\## What it does
+## Features
 
+- Reads experimental data from CSV
+- Computes numerical gradient using NumPy
+- Visualizes:
+  - Equipotential lines
+  - Electric field vectors
 
+## Result
 
-\- Reads experimental potential data
+![Electric Field](results/campo_electrico.png)
 
-\- Computes the electric field using numerical gradient
+## How to Run
 
-\- Plots equipotential lines and electric field
-
-
-
-\## How to run
-
-
-
-Run:
-
-
-
+```bash
+pip install numpy matplotlib pandas
 python src/main.py
-
-
-
-\## Result
-
-
-
-The output image is saved in the results folder.
-
